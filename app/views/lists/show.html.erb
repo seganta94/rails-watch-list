@@ -1,7 +1,7 @@
-<div class="container mt-3">
+<div class="container">
   <h1><%= @list.name %></h1>
 
-  <h6><u><strong>Bookmarks:</strong></u></h6>
+  <h6 style="text-decoration: underline; font-weight: bold;">Bookmarks:</h6>
     <% @list.bookmarks.each do |bookmark| %>
       <li class="list-group-item">
         <%= bookmark.movie.title %>
